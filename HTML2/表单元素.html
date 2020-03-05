@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单元素</title>
+</head>
+<body>
+    <form action="demo.php" method="GET""> 
+        用户名:<input type="text" username="zhangsan"
+        value="username" maxlength="10"> <br>
+        密码:<input type="password" value="pwd"><br>
+        性别:男<input type="radio" value="男" name="sex"> 女<input type="radio" value="女" name="sex" checked><br>
+        爱好:吃饭 <input type="checkbox" name="hobby"> 睡觉<input type="checkbox" name="hobby" checked> 
+        <br>
+        <input type="submit" value="免费注册">
+        <input type="reset" value="重写">
+        <input type="button" value="获取验证码"><!--与js配合使用-->
+        <input type="file" value="上传">
+        <!--label标签--使得文本也可以选定-->
+        <label for="username">用户名</label>
+        <input type="text" id="username">
+        <label for="boy">boy</label>
+        <input type="radio" value="boy" id="boy">
+        <br>
+        <br>
+        <br>
+        <select>
+            <option>rita</option>
+            <option>tata</option>
+            <option selected>ta姐</option>
+        </select>
+    </form>
+
+</body>
+</html>
