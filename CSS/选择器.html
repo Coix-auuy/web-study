@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css</title>
+    <style>
+        /* 选择器 {样式} */
+        /* 标签选择器 */
+        p {
+            color: pink;
+            font-size: 24px;
+            /* 键值对 */
+        }
+        /* 类选择器 样式点定义,结构类（class）调用 
+         一个或多个，开发最常用*/
+        .blue {
+            color: blue;
+        }
+        /* 多类名选择器  各个类名空格隔开*/
+        .font-size {
+            font-size: 20px;
+        }
+        /* id选择器 */
+        /* 样式#定义，结构id调用，只能调用一次，别人切勿使用 */
+        /* 成熟网站里，你很少看到css里用id选择器的，
+        都是用class，id选择器留给写js的人用，这样避免冲突。 */
+        /* css中id可以重复用，但是要避免，id具有唯一性 */
+        #div {
+            color: pink;
+        }
+        /* 通配符选择器 优先级很低*/
+        /* 不需要调用，所有元素都使用样式 */
+        * {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <p>有点意思</p>
+
+    <ul>
+        <li class="blue font-size">L</li>
+        <li>C</li>
+        <li class="blue">F</li>
+    </ul>
+
+    <div id="div">css1</div>
+    <div >css2</div>
+
+</body>
+</html>
