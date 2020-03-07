@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>font</title>
+    <style>
+        h2 {
+            font-family: '楷体';
+            font-size: 10px;
+            /* 标题标签比较特殊，需要单独指定文字大小 */
+        }
+        p {
+            font-family: 'Microsoft YaHei', 'Times New Roman';
+        }
+        body {
+            font-family: '宋体';
+            font-size: 30px;
+        }
+        .bold {
+            /* 数字不需要加单位 实际开发中更提倡数字 */
+            font-weight: 700;
+            color: pink;
+        }
+        /* 大范围的优先级没有小范围的大 */
+        .style {
+            font-style: italic;
+        }
+        /* 复合属性：简写的方式
+            font: font-style font-weight font-size/line-height font-family; 
+            必须保留font-size和font-family属性，否者font属性不起作用*/
+        .line {
+            font: italic 700 16px '楷体';
+        }
+    </style>
+</head>
+<body>
+    <h2>pink的秘密</h2>
+    <p>那一抹众人中最漂亮的颜色</p>
+    <p class="bold">font-weight</p>
+    <p class="style">文字样式</p>
+    <p class="line">复合属性，不能换位置</p>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文本属性</title>
+    <style>
+        .green {
+            color: green;
+        }
+        /* color: green;
+            color: rgb;
+            color: #FF0000 */
+        .align {
+            /* 本质是让盒子中的内容水平对齐 */
+            text-align: right;
+        }
+        .decoration {
+            text-decoration: none;
+        }
+        .indent {
+            text-indent: 2em;
+            /* 首行 缩进 1em当前文字（font-size）的1个文字大小*/
+        }
+        .lineheight {
+            line-height: 200px;
+        }
+        /* line-height = 字大小+上边距+下边距 */
+    </style>
+</head>
+<body>
+    <p class="green">文本颜色</p>
+    <p class="align">水平对齐方式</p>
+    <a href="#" class="decoration">装饰文本</p>
+    <p class="indent">文本缩进</p>
+    <p class="lineheight">行间距</p>
+</body>
+</html>
