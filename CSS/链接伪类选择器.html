@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伪类选择器</title>
+    <style>
+        /* 伪类选择器用于向某些选择器添加特殊的效果，比如给链接添加特殊效果，或者选择第1个，第n个元素 */
+        /* 严格按照书写顺序 lvha lv包包hao*/
+
+        /* 选择所有未被访问的链接 */
+        a:link {
+            color: yellow;
+            text-decoration: none;
+        }
+
+        /* 选择所有被访问过的链接 */
+        a:visited {
+            color: aqua;
+        }
+
+        /* 选择鼠标指针位于其上的链接 （用的最多）*/
+        a:hover {
+            color: pink;
+            text-decoration: underline;
+        }
+
+        /* 选择 活动链接（鼠标按下未弹起）*/
+        a:active {
+            color: skyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="https://www.bilibili.com">小猪佩奇</a>
+    <a href="http://www.xxxxxa.com">未知</a>
+</body>
+
+</html>

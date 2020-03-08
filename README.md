@@ -1,6 +1,12 @@
 # web-study
 web-study demo.
 
+2020.3.8
+
+css复合选择器 + emmet语法
+
+下午看概率论
+
 2020.3.7
 
 CSS第二天结束。

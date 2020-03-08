@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 并集选择器 选择多组标签，同时为他们定义相同的样式 */
+        /* 1.把熊大熊二改为粉色 */
+        /* div,
+        p {
+            color: pink;
+        } */
+
+        /* 2.把小猪一家 熊大熊二改为粉色*/
+        div,
+        p,
+        .pig li {
+            color: pink;
+        }
+
+        /* 并集选择器喜欢竖着写 */
+        /* 最后一个选择器不加逗号  */
+    </style>
+</head>
+
+<body>
+    <hr>
+    <div>熊大</div>
+    <p>熊二</p>
+    <span>光头强</span>
+    <ul class="pig">
+        <li>小猪佩奇</li>
+        <li>猪爸爸</li>
+        <li>猪妈妈</li>
+    </ul>
+</body>
+
+</html>
