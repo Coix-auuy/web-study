@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>元素的显示模式</title>
+    <!-- 元素（标签）以什么方式显示 -->
+    <style>
+        div {
+            /* 宽度默认为容器的100% */
+            widows: 200px;
+            height: 200px;
+            background-color: green;
+        }
+
+        span {
+            /* 不能直接设置宽和高 */
+            /* width: 100px;
+            height: 100px; */
+            color: pink;
+        }
+
+        input {
+            /* 高度、行高、外边距以及内边距都可以控制（块级元素） */
+            width: 200px;
+            height: 35px;
+        }
+
+        a {
+            width: 120px;
+            height: 50px;
+            background-color: aquamarine;
+            /* 把行内元素a转换为块级元素 */
+            display: block;
+        }
+
+        .d {
+            /* width: 120px;
+            height: 50px; */
+            /* 把div块级元素转换为行内元素 */
+            display: inline;
+        }
+
+        .s {
+            width: 100px;
+            height: 50px;
+            background-color: greenyellow;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 块元素 文字类的元素（p、h#）内不允许在放块级元素-->
+    <!-- <div> 标签最典型的块元素 -->
+    <div>独占一行</div>瑟瑟发抖
+    <div></div>
+    <hr>
+    <!-- 行内元素 -->
+    <!-- <span>标签是最典型的行内元素 -->
+    <span>coixhe</span><strong>你好骚啊~</strong>
+    <!-- 行内元素只能容纳文字或其他行内元素 -->
+    <!-- a里可以放块级元素 -->
+    <hr>
+    <!-- 行内块元素 <img/> <input/> <td>-->
+    <!-- 一行上可以有多个（行内元素） -->
+    <!-- 默认宽度是它本身内容的宽度 （行内元素）-->
+    <input type="text"><input type="text">
+    <hr>
+    <!-- 元素显示模式转换 -->
+    <!-- display:block （重点）-->
+    <a href="#">行内元素</a>
+
+    <!-- display: inline-->
+    <div class="d">块级元素转换为行内元素</div>
+    <div class="d">块级元素转换为行内元素</div>
+    <div class="d">块级元素转换为行内元素</div>
+
+    <!-- display: inline-block （重点）-->
+    <span class="s">行内元素转换为行内块元素</span>
+    <span class="s">行内元素转换为行内块元素</span>
+</body>
+
+</html>
