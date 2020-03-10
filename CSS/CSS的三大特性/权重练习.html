@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>权重练习</title>
+    <style>
+        /* 1.继承为0,0,0,0 */
+        /* .nav {
+            color: red;
+        }
+
+        li {
+            color: pink;
+        } */
+        /* 2.把第一个小li颜色改为粉色加粗 */
+        .nav li {
+            color: red;
+            /* 0,0,1,1 */
+        }
+
+        .nav .redbold {
+            color: pink;
+            /* 0,0,2,0 */
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="nav">
+        <li class="redbold">demo1</li>
+        <li>demo2</li>
+        <li>demo3</li>
+        <li>demo4</li>
+        <li>demo5</li>
+    </ul>
+</body>
+
+</html>
