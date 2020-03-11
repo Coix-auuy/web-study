@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浮动特性-脱标</title>
+    <style>
+        /* 1.脱离标准普通流的控制（浮）移动到指定位置（动），（俗称脱标）
+        2.浮动的盒子不再保留原先的位置 */
+        .box1 {
+            width: 200px;
+            height: 200px;
+            background-color: green;
+            float: left;
+        }
+
+        .box2 {
+            /* float: left; */
+            width: 300px;
+            height: 200px;
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">浮动</div>
+    <div class="box2">标准</div>
+</body>
+
+</html>

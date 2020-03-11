@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>手机模块</title>
+    <style>
+        /* 网页设置第二准则：先设置盒子大小，之后设置盒子的位置 */
+        .dad {
+            width: 1226px;
+            height: 615px;
+            background-color: green;
+            margin: 0 auto;
+        }
+
+        .left {
+            width: 234px;
+            height: 615px;
+            background-color: purple;
+            float: left;
+        }
+
+        .right {
+            float: left;
+            width: 992px;
+            height: 615px;
+            background-color: #4c4c4c;
+        }
+
+        .right>div {
+            float: left;
+            width: 234px;
+            height: 300px;
+            background-color: skyblue;
+            margin-left: 14px;
+            margin-bottom: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="dad">
+        <div class="left">青龙</div>
+        <div class="right">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+        </div>
+    </div>
+</body>
+
+</html>

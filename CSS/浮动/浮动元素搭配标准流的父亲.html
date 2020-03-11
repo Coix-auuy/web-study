@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浮动元素搭配标准流的父亲</title>
+    <!-- 先用标准流的元素排列上下位置，之后内部子元素采取浮动排列左右位置，符合网页布局的第一准则。 -->
+    <style>
+        .dad {
+            width: 100%;
+            height: 200px;
+            background-color: black;
+        }
+
+        .dad div {
+            margin-left: 10px;
+            width: 200px;
+            height: 200px;
+            background-color: green;
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="dad">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+
+</html>
