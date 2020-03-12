@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浮动清除-额外标签法</title>
+    <!-- 为什么需要清除浮动？
+    父级盒子很多情况下，不方便给高度，但是子盒子浮动又不占位子，最后父级盒子高度为0时，就会影响下面的标准盒子。
+    **浮动元素不再占用文档流的位置，所以它会对后面的元素排版产生影响。-->
+    <!-- 清除浮动 采取的是闭合浮动 -->
+    <style>
+        /* 额外标签法 */
+        /* 额外标签法会在浮动元素末尾添加一个空的标签。 */
+        /* 新标签必须为块级元素 */
+        .clear {
+            clear: both;
+        }
+    </style>
+
+<body>
+    <div class="box">
+        <div></div>
+        <div></div>
+        <div class="clear"></div>
+    </div>
+</body>
+
+</html>
