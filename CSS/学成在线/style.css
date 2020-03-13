@@ -116,6 +116,10 @@ a {
     color: #666666;
 }
 
+.user img {
+    vertical-align: middle;
+}
+
 /* header end */
 
 /* banner */
@@ -282,6 +286,8 @@ a {
 }
 
 .box .box-bd ul li {
+    /* 子绝父相 */
+    position: relative;
     float: left;
     width: 228px;
     height: 270px;
@@ -290,8 +296,14 @@ a {
     background-color: #fff;
 }
 
-.box .box-bd ul li img {
+.box .box-bd ul li>img {
     width: 100%;
+}
+
+.box .box-bd ul li em {
+    position: absolute;
+    top: 4px;
+    right: -8px;
 }
 
 .box .box-bd ul li h4 {

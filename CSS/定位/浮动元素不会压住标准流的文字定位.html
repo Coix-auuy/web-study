@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浮动元素不会压住标准流的文字定位</title>
+    <style>
+        div {
+            /*1. 浮动的元素不会压住下面标准流里的文字(图片) */
+            /* float: left; */
+            /*2. 绝对定位(固定定位)会压住下面标准流的所有内容 */
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background-color: powderblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+    <p>fly to the moon</p>
+</body>
+
+</html>

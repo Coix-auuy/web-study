@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>拓展</title>
+    <!-- 
+        1.实现水平垂直居中
+            先用绝对定位top：50%;再用margin：移动盒子大小的一半。
+        2.行内元素添加绝对或者固定定位，可以直接设置宽度和高度。块级元素不给宽高是内容的大小.
+        3.脱标的盒子不会触发外边距塌陷。
+     -->
+    <style>
+        .box {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -100px;
+            margin-top: -100px;
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+
+        span {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+    <span></span>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sticky</title>
+    <!-- 混合了相对定位和固定定位 -->
+    <!-- 
+        1.以浏览器的可视窗口为参照点移动元素（固定）。
+        2.占有原先的位置。
+        3.必须添加top left···其中一个才有效。
+     -->
+    <style>
+        body {
+            height: 3000px;
+        }
+
+        .nav {
+            margin: 100px auto;
+            position: sticky;
+            top: 0;
+            width: 800px;
+            height: 50px;
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav"></div>
+</body>
+
+</html>

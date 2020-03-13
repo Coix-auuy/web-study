@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>absolute</title>
+    <!-- 
+        1.如果没有祖先元素或者祖先元素没有定位，则以浏览器的为准定位。（Dcoument）
+        2.如果祖先元素有定位（相对、绝对、固定定位），则以最近一级的有定位祖先元素为参考点移动位置。
+        3.绝对定位不再占有原来的定位。（脱标）
+        4.子绝父相。
+     -->
+    <style>
+        /* .grandfather {
+            position: relative;
+            width: 800px;
+            height: 800px;
+            padding: 50px;
+            background-color: rgb(70, 18, 18);
+        } */
+
+        .father {
+            position: relative;
+            width: 500px;
+            height: 500px;
+            background-color: blue;
+        }
+
+        .son {
+            position: absolute;
+            top: 300px;
+            right: 0;
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+
+        .brother {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="grandfather"> -->
+    <div class="father">
+        <div class="son"></div>
+        <div class="brother"></div>
+    </div>
+    <!-- </div> -->
+
+
+</body>
+
+</html>

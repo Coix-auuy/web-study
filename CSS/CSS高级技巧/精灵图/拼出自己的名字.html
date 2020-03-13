@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HZX</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .clearfix:before,
+        .clearfix:after {
+            content: "";
+            display: table;
+        }
+
+        .clearfix:after {
+            clear: both;
+        }
+
+        .clearfix {
+            *zoom: 1;
+        }
+
+        .box {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-left: -165px;
+            margin-top: -55px;
+            width: 330px;
+            /* height: 110px; */
+            background-color: pink;
+        }
+
+        .box1,
+        .box2,
+        .box3 {
+            float: left;
+            width: 110px;
+            height: 110px;
+        }
+
+        .box1 {
+            background: url("../images/abcd.jpg") no-repeat -218px -141px;
+        }
+
+        .box2 {
+            background: url("../images/abcd.jpg") no-repeat -478px -556px;
+        }
+
+        .box3 {
+            background: url("../images/abcd.jpg") no-repeat -253px -556px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box clearfix">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div>
+
+</body>
+
+</html>

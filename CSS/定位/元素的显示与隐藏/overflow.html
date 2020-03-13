@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>overflow</title>
+    <!-- 
+        控制溢出的内容
+     -->
+    <style>
+        .peppa {
+            /* 默认显示visible */
+            /* overflow: visible; */
+
+            /* 隐藏溢出的内容 */
+            /* overflow: hidden; */
+
+            /* 溢出的部分滚动显示 */
+            /* overflow: scroll; */
+
+            /* 当内容没有溢出容器时不出现滚动条，当内容溢出容器时出现滚动条，按需出现滚动条。textarea元素的overflow默认值就是auto。 */
+            overflow: auto;
+            margin: 100px auto;
+            width: 200px;
+            height: 200px;
+            border: 3px solid pink;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="peppa">
+        《小猪佩奇》，又名《粉红猪小妹》（台湾名为粉红猪），英文名为《Peppa
+        Pig》，是由英国人阿斯特利（Astley）、贝克（Baker）
+    </div>
+</body>
+
+</html>
