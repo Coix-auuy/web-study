@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>过渡</title>
+    <!-- transition:要过度的属性 花费时间 运动曲线 何时开始; -->
+
+    <style>
+        div {
+            width: 200px;
+            height: 100px;
+            background-color: green;
+            /* 谁做过渡给谁加 */
+            /* transition: width 2s, height 2s, background-color 2s; */
+            transition: all 2s;
+        }
+
+        div:hover {
+            width: 800px;
+            height: 400px;
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>

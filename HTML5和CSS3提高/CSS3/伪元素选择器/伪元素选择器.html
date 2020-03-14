@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伪元素选择器</title>
+    <!-- 伪元素选择器可以帮助我们利用CSS创建新标签元素，从而简化了html元素 -->
+    <!-- 
+        1.element::after {}
+        2.element::before {}
+        在文档树中是找不到的。
+        必须有content属性
+        before在父元素内容的前面创建元素，after在父元素内容的后面创建元素
+        会创建一个行内元素 伪元素选择器的权重为0001
+     -->
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: green;
+        }
+
+        div::before {
+            content: 'before ';
+        }
+
+        div:after {
+            content: ' after';
+        }
+    </style>
+</head>
+
+<body>
+    <div>middle</div>
+</body>
+
+</html>

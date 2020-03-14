@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>课后作业</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .clearfix:after,
+        .clearfix:before {
+            content: "";
+            /* 转换为块级元素并且一行显示 */
+            display: table;
+        }
+
+        .clearfix:after {
+            clear: both;
+        }
+
+        .box {
+            width: 330px;
+            margin: 100px auto;
+        }
+
+        .box img {
+            width: 100%;
+        }
+
+        .box .jg {
+            margin-top: 5px;
+        }
+
+        .box .tj {
+            font-size: 18px;
+            color: red;
+        }
+
+        .box .ori {
+            font-size: 13px;
+            color: grey;
+            text-decoration: line-through;
+        }
+
+        .box .jd {
+
+            font-size: 12px;
+            margin-top: 4px;
+            margin-left: 10px;
+        }
+
+        .box .jd span {
+            float: left;
+        }
+
+        .box .jd .red {
+
+            color: red;
+        }
+
+        .box .jd .out {
+            float: left;
+            margin-top: 2px;
+            width: 210px;
+            height: 12px;
+            border-radius: 8px;
+            border: 1px solid red;
+        }
+
+        .box .jd .out .in {
+            width: 87%;
+            height: 12px;
+            border-radius: 8px 0 0 8px;
+            margin-top: -2px;
+            background-color: red;
+        }
+
+        .box a {
+            display: block;
+            width: 100%;
+            height: 53px;
+            line-height: 53px;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            font-size: 30px;
+            background-color: red;
+        }
+
+        .decr {
+            color: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="pic">
+            <img src="pic.jpg" alt="">
+        </div>
+        <p class="decr">
+            Apple苹果iPhone 11 64G黑色 移动联通电信4G手机
+        </p>
+        <p class="jg">
+            <span class="tj">￥6088</span>
+            <span class="ori">6988</span>
+        </p>
+        <div class="jd clearfix">
+            <span>已售</span><span class="red">87%</span>
+            <div class="out">
+                <div class="in"></div>
+            </div>
+            <span>剩余</span><span class="red">29</span>
+            <span>件</span>
+        </div>
+        <a href="#">立即抢购</a>
+    </div>
+</body>
+
+</html>

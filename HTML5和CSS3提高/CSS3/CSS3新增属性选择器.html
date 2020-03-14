@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3新增属性选择器</title>
+    <!-- 属性选择器权值为10 -->
+    <style>
+        /* 必须是input但是同时具有value这个属性 */
+        /* input[value] {
+            color: skyblue;
+        } */
+
+        input[type="password"] {
+            color: skyblue;
+        }
+
+        div[class^=icon] {
+            color: red;
+        }
+
+        section[class$=data] {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 1.利用属性选择器可以不用借助于类或者id选择器 -->
+    <!-- <input type="text" name="" id="" value="请输入">
+    <input type="text" name="" id=""> -->
+    <!-- 2.属性选择器还可以选择“属性=值”的某些元素 （重要）-->
+    <input type="text" name="" id="">
+    <input type="password" name="" id="">
+    <!-- 3.属性选择器可以选择属性值开头的某些元素 -->
+    <div class="icon1">小图标1</div>
+    <div class="icon2">小图标2</div>
+    <div class="icon3">小图标3</div>
+    <div class="icon4">小图标4</div>
+    <div>打酱油</div>
+    <!-- 4.属性选择器可以选择属性值结尾的某些元素-->
+    <section class="data">我是data</section>
+    <section class="date">我是date</section>
+    <!-- 5.E[att*="val"] 选取任意位置出现属性值的元素-->
+</body>
+
+</html>

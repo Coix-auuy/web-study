@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nth-type-of</title>
+    <style>
+        ul li:first-of-type {
+            background-color: green;
+        }
+
+        ul li:last-of-type {
+            background-color: green;
+        }
+
+        ul li:nth-of-type(even) {
+            background-color: pink;
+        }
+
+        /* nth-chilid 会把所有的孩子都排列序号 */
+        /* 执行的时候首先看 :nth-child(1) 之后会去看前面的div如果能匹配上就选择出来。 */
+        /* section div:nth-child(1) {
+            background-color: grey;
+        } */
+        /* nth-of-type 把指定元素（div）排列序号 */
+        /* 执行的时候首先看 div 之后去看:nth-of-type(1)如果能匹配上就选择出来。 */
+        section div:nth-of-type(1) {
+            background-color: grey;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>我是第1个孩子</li>
+        <li>我是第2个孩子</li>
+        <!-- <p></p> -->
+        <li>我是第3个孩子</li>
+        <li>我是第4个孩子</li>
+        <li>我是第5个孩子</li>
+        <li>我是第6个孩子</li>
+        <li>我是第7个孩子</li>
+        <li>我是第8个孩子</li>
+    </ul>
+    <section>
+        <p>强哥</p>
+        <div>熊大</div>
+        <div>熊二</div>
+    </section>
+</body>
+
+</html>
