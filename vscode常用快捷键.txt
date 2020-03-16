@@ -1,0 +1,12 @@
+1.Ctrl+b    打开/关闭侧边栏
+2.Shift+Alt+上键/下键   上移/下移复制行
+3.Ctrl+Shift+右箭头/左箭头  选中单词
+4.Ctrl+d    选定单词
+5.Ctrl+Shift+d  复制行
+6.Ctrl+g    导航到特定行
+7.Ctrl+backspace    删除上一个单词
+8.Ctrl+x    删除行
+9.Ctrl+Alt+上箭头/下箭头    在上方下方添加光标
+10.F2   对变量或函数重命名
+11.shift+Alt    列框的选择
+

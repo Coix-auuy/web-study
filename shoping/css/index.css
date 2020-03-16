@@ -176,3 +176,146 @@
     height: 145px;
     background-color: #ddd;
 }
+
+/* 猜你喜欢模块 */
+
+.ailike {
+    margin-top: 30px;
+    height: 265px;
+}
+
+.ailike_hd {
+    height: 28px;
+    line-height: 28px;
+    padding-right: 20px;
+}
+
+.ailike h3 {
+    float: left;
+    font-size: 18px;
+    color: #333333;
+    font-weight: 400;
+}
+
+.ailike_hd>a {
+    float: right;
+    font-size: 12px;
+    color: #333333;
+}
+
+.ailike_hd>a::after {
+    content: "\ea2e";
+    font-family: 'icomoon';
+    font-size: 12px;
+    color: #333333;
+}
+
+.ailike_bd ul li {
+    position: relative;
+    width: 200px;
+    float: left;
+}
+
+.ailike_bd ul li a h4 {
+    padding-left: 20px;
+    padding-right: 50px;
+    padding-top: 5px;
+}
+
+.ailike_bd ul li a .price {
+    margin-top: 10px;
+    color: #df3033;
+    font-size: 18px;
+    padding-left: 20px;
+    padding-right: 50px;
+}
+
+.ailike_bd ul li>div {
+    position: absolute;
+    width: 1px;
+    height: 60px;
+    background-color: #ededed;
+    right: 0;
+    bottom: 0;
+}
+
+/* 楼层模块 */
+
+/* 家电模块 */
+
+.floor .w {
+    margin-top: 30px;
+}
+
+.box_hd {
+    height: 30px;
+    border-bottom: 2px solid #c81623;
+}
+
+.box_hd h3 {
+    float: left;
+    font-size: 18px;
+    font-weight: 400;
+    color: #c81623;
+}
+
+.tab_list {
+    float: right;
+    line-height: 30px;
+}
+
+.tab_list ul li {
+    float: left;
+}
+
+.tab_list ul li a {
+    padding: 0 15px;
+}
+
+.box_bd {
+    height: 361px;
+}
+
+.tab_list_item>div {
+    float: left;
+    height: 361px;
+}
+
+.col_210 {
+    text-align: center;
+    width: 210px;
+    background-color: #f9f9f9;
+}
+
+.col_210 ul {
+    padding-left: 12px;
+}
+
+.col_210 ul li {
+    margin-right: 10px;
+    float: left;
+    width: 85px;
+    height: 34px;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    line-height: 33px;
+}
+
+.col_329 {
+    width: 329px;
+}
+
+.col_221 {
+    width: 221px;
+    border-right: 1px solid #ccc;
+}
+
+.col_219 {
+    width: 219px;
+}
+
+.bb {
+    /* 一般情况下，a如果包含有宽度的盒子，a需要转换为块级元素 */
+    display: block;
+    border-bottom: 1px solid #ccc;
+}
