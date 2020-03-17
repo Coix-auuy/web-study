@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>水平和垂直居中</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            position: relative;
+            width: 500px;
+            height: 500px;
+            background-color: green;
+
+            /* 移动的距离是盒子自身的宽度和高度的百分比 */
+            /* transform: translate(50%, 50%); */
+        }
+
+        p {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 200px;
+            height: 200px;
+            background-color: gray;
+            transform: translate(-50%, -50%);
+        }
+
+        /* translate对于行内元素无效 */
+    </style>
+</head>
+
+<body>
+    <div>
+        <p></p>
+    </div>
+</body>
+
+</html>

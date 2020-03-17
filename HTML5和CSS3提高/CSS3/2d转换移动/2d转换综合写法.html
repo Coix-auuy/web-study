@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: #ccc;
+            transition: all 2s;
+        }
+
+        div:hover {
+            /* 先旋转会改变坐标轴的方向 */
+            /* transform: rotate(180deg) translate(150px, 150px); */
+
+            /* 同时有位移和其他属性时，先写位移 */
+            transform: translate(150px, 150px) rotate(180deg);
+
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>

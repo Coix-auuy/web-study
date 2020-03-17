@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2d转换之translate</title>
+    <style>
+        /* div { */
+        /* width: 200px; */
+        /* height: 200px; */
+        /* background-color: green; */
+        /* transform: translate(0px, 100px); */
+        /* transform: translateX(100px); */
+        /* } */
+
+        /* 
+            translate不会影响到其他元素的位置。
+         */
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: green;
+        }
+
+        body div:nth-child(1) {
+            transition: all 2s;
+        }
+
+        body div:nth-child(1):hover {
+            transform: translateY(100px)
+        }
+
+        body div:nth-child(2) {
+            background-color: hotpink;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+    <div></div>
+</body>
+
+</html>

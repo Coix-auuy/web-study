@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>设置转换中点</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: grey;
+            margin: 100px auto;
+            transition: all 2s;
+            /* transform-origin: left bottom; */
+            /* 默认为50% 50% center center */
+            transform-origin: 20px 30px;
+        }
+
+        div:hover {
+            transform: rotate(360deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>

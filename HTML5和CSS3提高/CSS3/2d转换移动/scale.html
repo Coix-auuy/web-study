@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scale</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: green;
+            margin: 300px auto;
+            transform-origin: left bottom;
+        }
+
+        div:hover {
+            /* 1.数字不跟单位 就是倍数 */
+            /* transform: scale(0.5, 0.5); */
+            /* 2.scale的优势之处：不会影响其他的盒子，而且可以设置缩放的中心点*/
+
+            transform: scale(2);
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+    123
+</body>
+
+</html>

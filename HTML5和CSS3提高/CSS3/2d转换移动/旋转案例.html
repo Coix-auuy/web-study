@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>旋转案例</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .dad {
+            overflow: hidden;
+            margin: 100px auto;
+            width: 200px;
+            height: 200px;
+            border: 1px solid #ccc;
+        }
+
+        .dad::before {
+            display: block;
+            content: "h";
+            width: 100%;
+            height: 100%;
+            background-color: green;
+            transform-origin: left bottom;
+            transform: rotate(90deg);
+            transition: all 0.4s;
+        }
+
+        .dad:hover::before {
+            transform: rotate(0deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="dad">
+
+    </div>
+</body>
+
+</html>
