@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>常见属性</title>
+    <style>
+        @keyframes move {
+            0% {
+                transform: translate(0, 0);
+            }
+
+            100% {
+                transform: translate(500px, 0);
+            }
+        }
+
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: #ccc;
+            /* animation-name: move; */
+            /* animation-duration: 1s; */
+            /* 运动曲线 */
+            /* animation-timing-function: ease; */
+            /* 延迟开始 */
+            /* animation-delay: 2s; */
+            /* 重复次数 */
+            /* animation-iteration-count: infinite; */
+            /* 逆向播放 */
+            /* animation-direction: alternate; */
+            /* 保持结束状态 */
+            /* animation-fill-mode: forwards; */
+            /* 简写 */
+            /* animation:动画名称 持续时间 运动曲线 何时开始 播放次数 是否反方向 动画起始或者结束状态 */
+            /* 前两个一定要写 */
+            animation: move 2s linear 3 alternate;
+        }
+
+        div:hover {
+            /* 简写不包括 */
+            animation-play-state: paused;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>

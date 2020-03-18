@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 1.定义 */
+        @keyframes move {
+
+            /* 开始状态 */
+            0% {
+                transfrom: translateY(0px);
+            }
+
+            100% {
+                transform: translateY(1000px);
+            }
+        }
+
+        div {
+            margin: 0 auto;
+            width: 200px;
+            height: 200px;
+            background-color: green;
+            /* 2.调用动画 */
+            /* 动画名称 */
+            animation-name: move;
+            /* 持续时间 */
+            animation-duration: 20s;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>

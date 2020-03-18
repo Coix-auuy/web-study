@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* keyframes 关健帧 */
+        @keyframes move {
+
+            /* from {
+                transform: translate(0, 0);
+            }
+
+            to {
+                transform: translate(1000px, 0);
+            } */
+            /* 多个状态的变化 */
+            /* 百分比要是整数 */
+            /* 百分比就是总的时间的划分  */
+            0% {
+                transform: translate(0, 0);
+            }
+
+            25% {
+                transform: translate(500px, 0);
+            }
+
+            50% {
+                transform: translate(500px, 500px);
+            }
+
+            75% {
+                transform: translate(0, 500px);
+            }
+
+            100% {
+                transform: translate(0, 0);
+            }
+        }
+
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: green;
+            /* 2.调用动画 */
+            /* 动画名称 */
+            animation-name: move;
+            /* 持续时间 */
+            animation-duration: 3s;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>
