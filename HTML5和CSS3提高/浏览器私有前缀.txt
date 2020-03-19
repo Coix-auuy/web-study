@@ -1,0 +1,9 @@
+1.浏览器私有前缀是为了兼容老版本的写法。
+    -moz-:firefox
+    -ms-:ie
+    -webkit-:safari、chrome
+    -o-:Opera
+2.提倡的写法
+    -moz-border-radius:10px;
+    -web-kit-radius:10px;
+    border-radius:10px;

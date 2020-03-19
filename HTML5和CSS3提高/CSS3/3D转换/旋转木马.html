@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>旋转木马</title>
+    <style>
+        body {
+            perspective: 1000px;
+        }
+
+        section {
+            position: relative;
+            margin: 150px auto;
+            width: 300px;
+            height: 200px;
+            transform-style: preserve-3d;
+            /* 添加动画 */
+            animation: rotate 10s linear infinite;
+            background: url(dog.jpg) no-repeat;
+            cursor: pointer;
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotateY(0);
+            }
+
+            to {
+                transform: rotateY(360deg);
+            }
+        }
+
+        section:hover {
+            animation-play-state: paused;
+        }
+
+        section div {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url(dog.jpg) no-repeat;
+        }
+
+        section div:nth-child(1) {
+            transform: translateZ(300px);
+        }
+
+        section div:nth-child(2) {
+            /* 先旋转后移动 */
+            transform: rotateY(60deg) translateZ(300px);
+        }
+
+        section div:nth-child(3) {
+            /* 先旋转后移动 */
+            transform: rotateY(120deg) translateZ(300px);
+        }
+
+        section div:nth-child(4) {
+            /* 先旋转后移动 */
+            transform: rotateY(180deg) translateZ(300px);
+        }
+
+        section div:nth-child(5) {
+            /* 先旋转后移动 */
+            transform: rotateY(240deg) translateZ(300px);
+        }
+
+        section div:nth-child(6) {
+            /* 先旋转后移动 */
+            transform: rotateY(300deg) translateZ(300px);
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+</body>
+
+</html>
